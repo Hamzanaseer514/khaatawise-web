@@ -71,46 +71,111 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="relative hidden lg:block">
-              <div className="relative w-full max-w-lg mx-auto">
+            
+            {/* Right Side - Full Mobile View with Dashboard */}
+            <div className="relative">
+              <div className="relative max-w-md mx-auto">
+                {/* Decorative background blur */}
                 <div className="absolute inset-0 bg-gradient-to-r from-[#20B2AA] to-[#4dccc4] rounded-[3rem] blur-3xl opacity-20 -z-10"></div>
+                
+                {/* Phone Frame */}
                 <div className="relative bg-gray-900 rounded-[3rem] p-4 shadow-2xl">
                   <div className="bg-white rounded-[2.5rem] overflow-hidden">
                     {/* Status Bar */}
                     <div className="bg-[#20B2AA] px-6 py-3 flex justify-between items-center text-white text-xs">
-                      <span>9:41</span>
+                      <span>8:37</span>
                       <div className="flex items-center gap-1">
                         <div className="w-4 h-2 border border-white rounded-sm"></div>
                         <div className="w-1 h-1 bg-white rounded-full"></div>
                       </div>
                     </div>
                     
-                    {/* App Screen - Dashboard Preview */}
-                    <div className="bg-gray-50 p-4 min-h-[500px]">
+                    {/* Dashboard Screen - Full Mobile View */}
+                    <div className="bg-white p-6 min-h-[600px]">
+                      {/* Welcome Section */}
+                      <div className="mb-4">
+                        <div className="text-gray-400 text-sm mb-1">Welcome back,</div>
+                        <div className="text-gray-900 font-bold text-xl">Usman!</div>
+                        <button className="mt-2 px-4 py-1.5 bg-white/20 rounded-full text-white text-xs font-semibold">
+                          Logout
+                        </button>
+                      </div>
+                      
+                      {/* Dashboard Title */}
+                      <div className="text-center mb-6">
+                        <h2 className="text-2xl font-bold text-gray-900 mb-1">Dashboard</h2>
+                        <p className="text-sm text-gray-500">Choose a module to get started</p>
+                      </div>
+                      
+                      {/* Module Cards */}
                       <div className="space-y-3">
-                        <div className="bg-white rounded-xl p-4 shadow-sm">
-                          <div className="flex items-center justify-between mb-2">
-                            <span className="text-gray-600 font-medium text-sm">Dashboard</span>
-                            <span className="text-[#20B2AA] font-bold">₹12,450</span>
+                        {/* Contacts Card */}
+                        <div className="flex items-center gap-3 p-4 bg-white rounded-xl border-l-4 border-blue-500 shadow-sm">
+                          <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                            <span className="text-2xl">👥</span>
                           </div>
-                          <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
-                            <div className="h-full bg-[#20B2AA] rounded-full" style={{ width: '75%' }}></div>
+                          <div className="flex-1">
+                            <div className="font-bold text-gray-900">Contacts</div>
+                            <div className="text-sm text-gray-500">Manage your contacts</div>
                           </div>
+                          <span className="text-gray-400 text-xl">›</span>
                         </div>
-                        <div className="grid grid-cols-2 gap-2">
-                          <div className="bg-white rounded-xl p-3 text-center shadow-sm">
-                            <div className="text-xl mb-1">📝</div>
-                            <div className="text-xs text-gray-600">Personal</div>
+                        
+                        {/* Personal Khaata Card */}
+                        <div className="flex items-center gap-3 p-4 bg-white rounded-xl border-l-4 border-green-500 shadow-sm">
+                          <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                            <span className="text-2xl">📝</span>
                           </div>
-                          <div className="bg-white rounded-xl p-3 text-center shadow-sm">
-                            <div className="text-xl mb-1">👥</div>
-                            <div className="text-xs text-gray-600">Group</div>
+                          <div className="flex-1">
+                            <div className="font-bold text-gray-900">Personal Khaata</div>
+                            <div className="text-sm text-gray-500">Track your income & expenses</div>
                           </div>
+                          <span className="text-gray-400 text-xl">›</span>
+                        </div>
+                        
+                        {/* Group Khaata Card */}
+                        <div className="flex items-center gap-3 p-4 bg-white rounded-xl border-l-4 border-purple-500 shadow-sm">
+                          <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                            <span className="text-2xl">👨‍👩‍👧‍👦</span>
+                          </div>
+                          <div className="flex-1">
+                            <div className="font-bold text-gray-900">Group Khaata</div>
+                            <div className="text-sm text-gray-500">Split bills with friends</div>
+                          </div>
+                          <span className="text-gray-400 text-xl">›</span>
+                        </div>
+                        
+                        {/* Mess Attendance Card */}
+                        <div className="flex items-center gap-3 p-4 bg-white rounded-xl border-l-4 border-orange-500 shadow-sm">
+                          <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
+                            <span className="text-2xl">🍽️</span>
+                          </div>
+                          <div className="flex-1">
+                            <div className="font-bold text-gray-900">Mess Attendance</div>
+                            <div className="text-sm text-gray-500">Track daily meals & billing</div>
+                          </div>
+                          <span className="text-gray-400 text-xl">›</span>
+                        </div>
+                        
+                        {/* Mess Analytics Card */}
+                        <div className="flex items-center gap-3 p-4 bg-white rounded-xl border-l-4 border-[#20B2AA] shadow-sm">
+                          <div className="w-12 h-12 bg-[#20B2AA]/10 rounded-lg flex items-center justify-center">
+                            <span className="text-2xl">📊</span>
+                          </div>
+                          <div className="flex-1">
+                            <div className="font-bold text-gray-900">Mess Analytics</div>
+                            <div className="text-sm text-gray-500">View detailed analytics</div>
+                          </div>
+                          <span className="text-gray-400 text-xl">›</span>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+                
+                {/* Decorative elements */}
+                <div className="absolute -top-8 -right-8 w-32 h-32 bg-[#20B2AA]/10 rounded-full blur-2xl -z-10"></div>
+                <div className="absolute -bottom-8 -left-8 w-40 h-40 bg-[#20B2AA]/10 rounded-full blur-3xl -z-10"></div>
               </div>
             </div>
           </div>
@@ -289,6 +354,94 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Welcome/Splash Screen Section */}
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#20B2AA] to-[#16a085]">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              Experience Khaata App
+            </h2>
+            <p className="text-xl text-white/90 max-w-2xl mx-auto">
+              See how Khaata App welcomes you with a beautiful splash screen
+            </p>
+          </div>
+          
+          <div className="flex justify-center">
+            <div className="relative max-w-sm mx-auto">
+              {/* Decorative background blur */}
+              <div className="absolute inset-0 bg-white/10 rounded-[3rem] blur-3xl -z-10"></div>
+              
+              {/* Phone Frame with Splash Screen */}
+              <div className="relative bg-gray-900 rounded-[3rem] p-4 shadow-2xl">
+                <div className="bg-[#20B2AA] rounded-[2.5rem] overflow-hidden">
+                  {/* Status Bar */}
+                  <div className="px-6 py-3 flex justify-between items-center text-white text-xs">
+                    <span>1:07</span>
+                    <div className="flex items-center gap-1">
+                      <span className="text-xs">4.00 KB/S</span>
+                      <span className="text-xs ml-1">VoD</span>
+                      <span className="text-xs ml-1">LTE</span>
+                      <div className="w-6 h-3 border border-white rounded-sm ml-1 flex items-center justify-end pr-0.5">
+                        <div className="w-4 h-2 bg-white rounded-sm"></div>
+                      </div>
+                      <span className="text-xs ml-1">64</span>
+                    </div>
+                  </div>
+                  
+                  {/* Splash Screen Content */}
+                  <div className="bg-[#20B2AA] p-8 min-h-[600px] flex flex-col items-center justify-center">
+                    {/* Central Graphic Container */}
+                    <div className="bg-blue-400/30 backdrop-blur-sm rounded-2xl p-8 mb-8 border border-white/20 shadow-lg">
+                      <div className="flex items-center justify-center gap-6">
+                        {/* Money Bag Icon */}
+                        <div className="bg-yellow-400 rounded-xl p-4 shadow-lg">
+                          <div className="text-4xl font-bold text-gray-900">$</div>
+                        </div>
+                        
+                        {/* Bar Chart */}
+                        <div className="bg-white/90 rounded-lg p-4 shadow-lg">
+                          <div className="flex items-end gap-2 h-16">
+                            <div className="w-6 bg-green-500 rounded-t" style={{ height: '40%' }}></div>
+                            <div className="w-6 bg-red-500 rounded-t" style={{ height: '60%' }}></div>
+                            <div className="w-6 bg-blue-500 rounded-t" style={{ height: '100%' }}></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* App Title */}
+                    <h1 className="text-4xl font-bold text-white mb-3">
+                      Khaata App
+                    </h1>
+                    
+                    {/* Tagline */}
+                    <p className="text-lg text-white/90 mb-12 text-center">
+                      Manage your finances with ease
+                    </p>
+                    
+                    {/* Loading Indicator */}
+                    <div className="mt-auto mb-8">
+                      <div className="flex items-center gap-2 text-white/80">
+                        <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+                        <div className="w-2 h-2 bg-white rounded-full animate-pulse delay-75"></div>
+                        <div className="w-2 h-2 bg-white rounded-full animate-pulse delay-150"></div>
+                      </div>
+                      <p className="text-sm text-white/70 mt-3 text-center">
+                        Getting started...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Decorative elements */}
+              <div className="absolute -top-8 -right-8 w-32 h-32 bg-white/10 rounded-full blur-2xl -z-10"></div>
+              <div className="absolute -bottom-8 -left-8 w-40 h-40 bg-white/10 rounded-full blur-3xl -z-10"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Download App Section - Left: Download Options, Right: Phone Mockup */}
       <section id="download" className="py-24 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
@@ -306,8 +459,8 @@ export default function Home() {
                 {/* Google Play Button */}
                 <a
                   href="https://play.google.com/store/apps/details?id=com.khaata.app"
-                  target="_blank"
-                  rel="noopener noreferrer"
+            target="_blank"
+            rel="noopener noreferrer"
                   className="group flex items-center gap-4 bg-gray-900 hover:bg-gray-800 rounded-xl p-4 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                 >
                   <div className="w-14 h-14 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
@@ -327,8 +480,8 @@ export default function Home() {
                 {/* App Store Button */}
                 <a
                   href="https://apps.apple.com/app/khaata-app/id123456789"
-                  target="_blank"
-                  rel="noopener noreferrer"
+            target="_blank"
+            rel="noopener noreferrer"
                   className="group flex items-center gap-4 bg-gray-900 hover:bg-gray-800 rounded-xl p-4 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                 >
                   <div className="w-14 h-14 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
@@ -362,87 +515,122 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right Side - Phone Mockup with Dashboard */}
+            {/* Right Side - Enhanced Mobile View with App Highlights */}
             <div className="order-1 lg:order-2 relative">
               <div className="relative max-w-md mx-auto">
-                <div className="bg-gray-900 rounded-[3rem] p-4 shadow-2xl">
-                  <div className="bg-white rounded-[2.5rem] overflow-hidden">
+                {/* Decorative background blur */}
+                <div className="absolute inset-0 bg-gradient-to-r from-[#20B2AA] to-[#4dccc4] rounded-[3rem] blur-3xl opacity-20 -z-10"></div>
+                
+                {/* Phone Frame */}
+                <div className="relative bg-gray-900 rounded-[3rem] p-4 shadow-2xl">
+                  <div className="bg-gradient-to-br from-gray-50 to-white rounded-[2.5rem] overflow-hidden">
                     {/* Status Bar */}
-                    <div className="bg-[#20B2AA] px-6 py-3 flex justify-between items-center text-white text-xs">
-                      <span>8:37</span>
+                    <div className="bg-[#20B2AA] px-6 py-3 flex justify-between items-center text-white text-xs shadow-sm">
+                      <span className="font-medium">8:37</span>
                       <div className="flex items-center gap-1">
                         <div className="w-4 h-2 border border-white rounded-sm"></div>
                         <div className="w-1 h-1 bg-white rounded-full"></div>
                       </div>
                     </div>
                     
-                    {/* Dashboard Screen */}
-                    <div className="bg-white p-6 min-h-[600px]">
-                      <div className="mb-4">
-                        <div className="text-gray-400 text-sm mb-1">Welcome back,</div>
-                        <div className="text-gray-900 font-bold text-xl">Usman!</div>
-                      </div>
-                      
+                    {/* Enhanced App Screen with Highlights */}
+                    <div className="bg-gradient-to-br from-gray-50 to-white p-6 min-h-[700px]">
+                      {/* App Header with Logo */}
                       <div className="text-center mb-6">
-                        <h2 className="text-2xl font-bold text-gray-900 mb-1">Dashboard</h2>
-                        <p className="text-sm text-gray-500">Choose a module to get started</p>
+                        <div className="inline-flex items-center justify-center w-16 h-16 bg-[#20B2AA] rounded-2xl shadow-lg mb-3">
+                          <span className="text-3xl font-bold text-white">K</span>
+                        </div>
+                        <h2 className="text-2xl font-bold text-gray-900 mb-1">Khaata App</h2>
+                        <p className="text-sm text-[#20B2AA] font-medium">Your Finance Manager</p>
                       </div>
-                      
-                      {/* Module Cards */}
-                      <div className="space-y-3">
-                        <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-xl border-l-4 border-blue-500 shadow-sm">
-                          <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                            <span className="text-2xl">👥</span>
-                          </div>
-                          <div className="flex-1">
-                            <div className="font-bold text-gray-900">Contacts</div>
-                            <div className="text-sm text-gray-500">Manage your contacts</div>
-                          </div>
-                          <span className="text-gray-400 text-xl">›</span>
+
+                      {/* Quick Stats Cards */}
+                      <div className="grid grid-cols-3 gap-2 mb-6">
+                        <div className="bg-white rounded-xl p-3 text-center shadow-sm border border-gray-100">
+                          <div className="text-xl mb-1">📊</div>
+                          <div className="text-xs font-bold text-gray-900">9+</div>
+                          <div className="text-[10px] text-gray-500">Features</div>
                         </div>
-                        
-                        <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-xl border-l-4 border-green-500 shadow-sm">
-                          <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
-                            <span className="text-2xl">📝</span>
-                          </div>
-                          <div className="flex-1">
-                            <div className="font-bold text-gray-900">Personal Khaata</div>
-                            <div className="text-sm text-gray-500">Track your income & expenses</div>
-                          </div>
-                          <span className="text-gray-400 text-xl">›</span>
+                        <div className="bg-white rounded-xl p-3 text-center shadow-sm border border-gray-100">
+                          <div className="text-xl mb-1">⭐</div>
+                          <div className="text-xs font-bold text-gray-900">4.8</div>
+                          <div className="text-[10px] text-gray-500">Rating</div>
                         </div>
-                        
-                        <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-xl border-l-4 border-purple-500 shadow-sm">
-                          <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
-                            <span className="text-2xl">👨‍👩‍👧‍👦</span>
-                          </div>
-                          <div className="flex-1">
-                            <div className="font-bold text-gray-900">Group Khaata</div>
-                            <div className="text-sm text-gray-500">Split bills with friends</div>
-                          </div>
-                          <span className="text-gray-400 text-xl">›</span>
+                        <div className="bg-white rounded-xl p-3 text-center shadow-sm border border-gray-100">
+                          <div className="text-xl mb-1">👥</div>
+                          <div className="text-xs font-bold text-gray-900">1K+</div>
+                          <div className="text-[10px] text-gray-500">Users</div>
                         </div>
-                        
-                        <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-xl border-l-4 border-orange-500 shadow-sm">
-                          <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
-                            <span className="text-2xl">🍽️</span>
-                          </div>
-                          <div className="flex-1">
-                            <div className="font-bold text-gray-900">Mess Attendance</div>
-                            <div className="text-sm text-gray-500">Track daily meals & billing</div>
-                          </div>
-                          <span className="text-gray-400 text-xl">›</span>
+                      </div>
+
+                      {/* App Highlights Banner */}
+                      <div className="bg-gradient-to-r from-[#20B2AA] to-[#16a085] rounded-xl p-4 mb-6 text-white shadow-lg">
+                        <div className="flex items-center justify-between mb-2">
+                          <span className="text-sm font-semibold">Total Saved</span>
+                          <span className="text-lg font-bold">₹12,450</span>
                         </div>
-                        
-                        <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-xl border-l-4 border-[#20B2AA] shadow-sm">
-                          <div className="w-12 h-12 bg-[#20B2AA]/10 rounded-lg flex items-center justify-center">
-                            <span className="text-2xl">📊</span>
+                        <div className="h-2 bg-white/20 rounded-full overflow-hidden">
+                          <div className="h-full bg-white rounded-full" style={{ width: '75%' }}></div>
+                        </div>
+                        <div className="flex justify-between text-xs mt-2 text-white/80">
+                          <span>Receivables</span>
+                          <span>Payables</span>
+                        </div>
+                      </div>
+
+                      {/* Key Features Showcase */}
+                      <div className="mb-6">
+                        <h3 className="text-sm font-bold text-gray-900 mb-3 flex items-center gap-2">
+                          <span className="text-[#20B2AA]">✨</span>
+                          Key Features
+                        </h3>
+                        <div className="space-y-2">
+                          <div className="flex items-center gap-2 p-2 bg-white rounded-lg shadow-sm border border-gray-100">
+                            <span className="text-lg">💰</span>
+                            <span className="text-xs font-medium text-gray-700 flex-1">Track Income & Expenses</span>
+                            <span className="text-green-500 text-xs">✓</span>
                           </div>
-                          <div className="flex-1">
-                            <div className="font-bold text-gray-900">Mess Analytics</div>
-                            <div className="text-sm text-gray-500">View detailed analytics</div>
+                          <div className="flex items-center gap-2 p-2 bg-white rounded-lg shadow-sm border border-gray-100">
+                            <span className="text-lg">👥</span>
+                            <span className="text-xs font-medium text-gray-700 flex-1">Split Bills with Friends</span>
+                            <span className="text-green-500 text-xs">✓</span>
                           </div>
-                          <span className="text-gray-400 text-xl">›</span>
+                          <div className="flex items-center gap-2 p-2 bg-white rounded-lg shadow-sm border border-gray-100">
+                            <span className="text-lg">🍽️</span>
+                            <span className="text-xs font-medium text-gray-700 flex-1">Mess Attendance Tracking</span>
+                            <span className="text-green-500 text-xs">✓</span>
+                          </div>
+                          <div className="flex items-center gap-2 p-2 bg-white rounded-lg shadow-sm border border-gray-100">
+                            <span className="text-lg">📊</span>
+                            <span className="text-xs font-medium text-gray-700 flex-1">Detailed Analytics</span>
+                            <span className="text-green-500 text-xs">✓</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* App Benefits */}
+                      <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100">
+                        <h3 className="text-sm font-bold text-gray-900 mb-3 flex items-center gap-2">
+                          <span className="text-[#20B2AA]">🎯</span>
+                          Why Choose Us?
+                        </h3>
+                        <div className="space-y-2">
+                          <div className="flex items-start gap-2">
+                            <span className="text-[#20B2AA] text-xs mt-0.5">•</span>
+                            <span className="text-xs text-gray-600 flex-1">100% Free - No Hidden Charges</span>
+                          </div>
+                          <div className="flex items-start gap-2">
+                            <span className="text-[#20B2AA] text-xs mt-0.5">•</span>
+                            <span className="text-xs text-gray-600 flex-1">Secure & Encrypted Data</span>
+                          </div>
+                          <div className="flex items-start gap-2">
+                            <span className="text-[#20B2AA] text-xs mt-0.5">•</span>
+                            <span className="text-xs text-gray-600 flex-1">No Ads - Clean Experience</span>
+                          </div>
+                          <div className="flex items-start gap-2">
+                            <span className="text-[#20B2AA] text-xs mt-0.5">•</span>
+                            <span className="text-xs text-gray-600 flex-1">Offline Support Available</span>
+                          </div>
                         </div>
                       </div>
                     </div>
