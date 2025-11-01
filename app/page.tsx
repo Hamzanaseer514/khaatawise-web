@@ -1,4 +1,5 @@
-import Image from "next/image";
+import FeaturesCarousel from '@/components/FeaturesCarousel';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -8,10 +9,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-[#20B2AA] rounded-lg flex items-center justify-center shadow-md">
-                <span className="text-white text-xl font-bold">K</span>
-              </div>
-              <span className="text-xl font-bold text-gray-900">Khaata App</span>
+              <Image
+                src="/khaataicon.png"
+                alt="Khaatawise Logo"
+                width={40}
+                height={40}
+                className="w-10 h-10 rounded-lg"
+              />
+              <span className="text-xl font-bold text-gray-900">Khaatawise</span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <a href="#features" className="text-gray-700 hover:text-[#20B2AA] transition-colors font-medium">Features</a>
@@ -359,10 +364,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Experience Khaata App
+              Experience Khaatawise
             </h2>
             <p className="text-xl text-white/90 max-w-2xl mx-auto">
-              See how Khaata App welcomes you with a beautiful splash screen
+              See how Khaatawise welcomes you with a beautiful splash screen
             </p>
           </div>
           
@@ -411,7 +416,7 @@ export default function Home() {
                     
                     {/* App Title */}
                     <h1 className="text-4xl font-bold text-white mb-3">
-                      Khaata App
+                      Khaatawise
                     </h1>
                     
                     {/* Tagline */}
@@ -442,80 +447,101 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Download App Section - Left: Download Options, Right: Phone Mockup */}
+      {/* Download App Section */}
       <section id="download" className="py-24 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
+          {/* Section Title */}
+          <div className="text-center mb-16">
+            <h2 className="text-5xl sm:text-6xl md:text-7xl font-black text-gray-900 mb-4">
+              Download our APP
+            </h2>
+          </div>
+
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            {/* Left Side - Download Options */}
+            {/* Left Side - App Description and Download Buttons */}
             <div className="order-2 lg:order-1">
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                Download Khaata App
-              </h2>
-              <p className="text-xl text-gray-600 mb-10 leading-relaxed">
-                Get started with Khaata App today and take control of your finances. Available for Android and iOS.
+              <p className="text-xl sm:text-2xl text-gray-600 mb-12 leading-relaxed max-w-lg">
+                Get started with Khaatawise today and take control of your finances. Manage expenses, split bills, track mess attendance, and get detailed analytics - all in one powerful app.
               </p>
               
-              <div className="space-y-4 mb-8">
-                {/* Google Play Button */}
+              {/* Two Buttons Side by Side */}
+              <div className="grid sm:grid-cols-2 gap-4 max-w-lg">
+                {/* Android/Google Play Button */}
                 <a
-                  href="https://play.google.com/store/apps/details?id=com.khaata.app"
-            target="_blank"
-            rel="noopener noreferrer"
-                  className="group flex items-center gap-4 bg-gray-900 hover:bg-gray-800 rounded-xl p-4 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                  href="https://expo.dev/accounts/safersavvy12/projects/khaata-app/builds/065f6591-044f-491a-b812-e8d837024a8f"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex flex-col items-center justify-center bg-white border-2 border-gray-200 hover:border-[#20B2AA] rounded-2xl p-6 transition-all shadow-md hover:shadow-xl transform hover:-translate-y-1"
                 >
-                  <div className="w-14 h-14 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg className="w-8 h-8 text-gray-900" fill="currentColor" viewBox="0 0 24 24">
+                  <div className="w-16 h-16 bg-gray-900 rounded-xl flex items-center justify-center mb-4 group-hover:bg-[#20B2AA] transition-colors">
+                    <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
                     </svg>
                   </div>
-                  <div className="flex-1">
-                    <div className="text-xs text-gray-400 mb-1">Get it on</div>
-                    <div className="text-xl font-bold text-white">Google Play</div>
+                  <div className="text-center">
+                    <div className="text-xs text-gray-500 mb-1 font-medium">Get it on</div>
+                    <div className="text-lg font-bold text-gray-900 group-hover:text-[#20B2AA] transition-colors">Google Play</div>
                   </div>
-                  <svg className="w-6 h-6 text-white group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
                 </a>
 
-                {/* App Store Button */}
+                {/* iOS/App Store Button */}
                 <a
-                  href="https://apps.apple.com/app/khaata-app/id123456789"
-            target="_blank"
-            rel="noopener noreferrer"
-                  className="group flex items-center gap-4 bg-gray-900 hover:bg-gray-800 rounded-xl p-4 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                  href="https://expo.dev/accounts/safersavvy12/projects/khaata-app/builds/065f6591-044f-491a-b812-e8d837024a8f"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex flex-col items-center justify-center bg-white border-2 border-gray-200 hover:border-[#20B2AA] rounded-2xl p-6 transition-all shadow-md hover:shadow-xl transform hover:-translate-y-1"
                 >
-                  <div className="w-14 h-14 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg className="w-8 h-8 text-gray-900" fill="currentColor" viewBox="0 0 24 24">
+                  <div className="w-16 h-16 bg-gray-900 rounded-xl flex items-center justify-center mb-4 group-hover:bg-[#20B2AA] transition-colors">
+                    <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M17.05,20.28C16.29,20.64 15.43,20.64 14.67,20.28L5.57,15.81C4.81,15.45 4.22,14.69 4.22,13.81V10.19C4.22,9.31 4.81,8.55 5.57,8.19L14.67,3.72C15.43,3.36 16.29,3.36 17.05,3.72L23.63,7.06C24.39,7.42 25,8.18 25,9.06V14.94C25,15.82 24.39,16.58 23.63,16.94L17.05,20.28M16.54,18.56C16.95,18.74 17.41,18.74 17.82,18.56L22.27,16.28C22.68,16.1 23,15.7 23,15.24V8.76C23,8.3 22.68,7.9 22.27,7.72L17.82,5.44C17.41,5.26 16.95,5.26 16.54,5.44L7.44,9.91C7.03,10.09 6.63,10.54 6.63,11V13C6.63,13.46 7.03,13.91 7.44,14.09L16.54,18.56Z"/>
                     </svg>
                   </div>
-                  <div className="flex-1">
-                    <div className="text-xs text-gray-400 mb-1">Download on the</div>
-                    <div className="text-xl font-bold text-white">App Store</div>
+                  <div className="text-center">
+                    <div className="text-xs text-gray-500 mb-1 font-medium">Download on the</div>
+                    <div className="text-lg font-bold text-gray-900 group-hover:text-[#20B2AA] transition-colors">App Store</div>
                   </div>
-                  <svg className="w-6 h-6 text-white group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
                 </a>
               </div>
 
-              <div className="flex flex-wrap gap-4 text-sm text-gray-500">
+              {/* QR Code Section */}
+              <div className="mt-10 pt-8 border-t border-gray-200">
+                <div className="text-center mb-4">
+                  <p className="text-sm text-gray-500 mb-2 font-medium">Or scan to download</p>
+                </div>
+                <div className="flex justify-center">
+                  <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-gray-100 hover:border-[#20B2AA] transition-all">
+                    <Image
+                      src="/qr.png"
+                      alt="QR Code to download Khaatawise"
+                      width={200}
+                      height={200}
+                      className="w-48 h-48"
+                    />
+                    <p className="text-xs text-gray-500 text-center mt-3 max-w-[200px]">
+                      Scan with your phone camera to download
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Compatibility Info */}
+              <div className="mt-8 flex flex-wrap gap-6 text-sm text-gray-500">
                 <div className="flex items-center space-x-2">
-                  <span className="text-[#20B2AA]">✓</span>
+                  <span className="text-[#20B2AA] font-bold">✓</span>
                   <span>Android 5.0+</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <span className="text-[#20B2AA]">✓</span>
+                  <span className="text-[#20B2AA] font-bold">✓</span>
                   <span>iOS 12.0+</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <span className="text-[#20B2AA]">✓</span>
+                  <span className="text-[#20B2AA] font-bold">✓</span>
                   <span>Free Download</span>
                 </div>
               </div>
             </div>
 
-            {/* Right Side - Enhanced Mobile View with App Highlights */}
+            {/* Right Side - Phone Mockup with App Info Screen */}
             <div className="order-1 lg:order-2 relative">
               <div className="relative max-w-md mx-auto">
                 {/* Decorative background blur */}
@@ -523,7 +549,7 @@ export default function Home() {
                 
                 {/* Phone Frame */}
                 <div className="relative bg-gray-900 rounded-[3rem] p-4 shadow-2xl">
-                  <div className="bg-gradient-to-br from-gray-50 to-white rounded-[2.5rem] overflow-hidden">
+                  <div className="bg-white rounded-[2.5rem] overflow-hidden">
                     {/* Status Bar */}
                     <div className="bg-[#20B2AA] px-6 py-3 flex justify-between items-center text-white text-xs shadow-sm">
                       <span className="font-medium">8:37</span>
@@ -533,103 +559,119 @@ export default function Home() {
                       </div>
                     </div>
                     
-                    {/* Enhanced App Screen with Highlights */}
-                    <div className="bg-gradient-to-br from-gray-50 to-white p-6 min-h-[700px]">
-                      {/* App Header with Logo */}
-                      <div className="text-center mb-6">
-                        <div className="inline-flex items-center justify-center w-16 h-16 bg-[#20B2AA] rounded-2xl shadow-lg mb-3">
-                          <span className="text-3xl font-bold text-white">K</span>
+                    {/* App Info Screen */}
+                    <div className="bg-white p-6 min-h-[600px]">
+                      {/* App Logo & Name */}
+                      <div className="text-center mb-8">
+                        <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg p-2">
+                          <Image
+                            src="/khaataicon.png"
+                            alt="Khaatawise Logo"
+                            width={80}
+                            height={80}
+                            className="w-full h-full rounded-xl"
+                          />
                         </div>
-                        <h2 className="text-2xl font-bold text-gray-900 mb-1">Khaata App</h2>
-                        <p className="text-sm text-[#20B2AA] font-medium">Your Finance Manager</p>
+                        <h2 className="text-3xl font-bold text-gray-900 mb-2">Khaatawise</h2>
+                        <p className="text-[#20B2AA] font-semibold text-lg">Your Finance Manager</p>
                       </div>
-
-                      {/* Quick Stats Cards */}
-                      <div className="grid grid-cols-3 gap-2 mb-6">
-                        <div className="bg-white rounded-xl p-3 text-center shadow-sm border border-gray-100">
-                          <div className="text-xl mb-1">📊</div>
-                          <div className="text-xs font-bold text-gray-900">9+</div>
-                          <div className="text-[10px] text-gray-500">Features</div>
+                      
+                      {/* Stats Cards */}
+                      <div className="flex gap-3 mb-6">
+                        <div className="flex-1 bg-white rounded-xl p-4 shadow-md border border-gray-100">
+                          <div className="text-2xl mb-2 text-center">📊</div>
+                          <div className="text-2xl font-bold text-gray-900 text-center mb-1">9+</div>
+                          <div className="text-xs text-gray-500 text-center">Features</div>
                         </div>
-                        <div className="bg-white rounded-xl p-3 text-center shadow-sm border border-gray-100">
-                          <div className="text-xl mb-1">⭐</div>
-                          <div className="text-xs font-bold text-gray-900">4.8</div>
-                          <div className="text-[10px] text-gray-500">Rating</div>
+                        <div className="flex-1 bg-white rounded-xl p-4 shadow-md border border-gray-100">
+                          <div className="text-2xl mb-2 text-center">⭐</div>
+                          <div className="text-2xl font-bold text-gray-900 text-center mb-1">4.8</div>
+                          <div className="text-xs text-gray-500 text-center">Rating</div>
                         </div>
-                        <div className="bg-white rounded-xl p-3 text-center shadow-sm border border-gray-100">
-                          <div className="text-xl mb-1">👥</div>
-                          <div className="text-xs font-bold text-gray-900">1K+</div>
-                          <div className="text-[10px] text-gray-500">Users</div>
+                        <div className="flex-1 bg-white rounded-xl p-4 shadow-md border border-gray-100">
+                          <div className="text-2xl mb-2 text-center">👥</div>
+                          <div className="text-2xl font-bold text-gray-900 text-center mb-1">1K+</div>
+                          <div className="text-xs text-gray-500 text-center">Users</div>
                         </div>
                       </div>
-
-                      {/* App Highlights Banner */}
-                      <div className="bg-gradient-to-r from-[#20B2AA] to-[#16a085] rounded-xl p-4 mb-6 text-white shadow-lg">
-                        <div className="flex items-center justify-between mb-2">
-                          <span className="text-sm font-semibold">Total Saved</span>
-                          <span className="text-lg font-bold">₹12,450</span>
+                      
+                      {/* Total Saved Section */}
+                      <div className="bg-[#20B2AA] rounded-xl p-5 mb-6 shadow-lg">
+                        <div className="flex justify-between items-center mb-3">
+                          <span className="text-white font-semibold">Total Saved</span>
+                          <span className="text-white text-2xl font-bold">₹12,450</span>
                         </div>
-                        <div className="h-2 bg-white/20 rounded-full overflow-hidden">
-                          <div className="h-full bg-white rounded-full" style={{ width: '75%' }}></div>
+                        <div className="w-full h-2 bg-white/20 rounded-full mb-2">
+                          <div className="w-[65%] h-full bg-white rounded-full"></div>
                         </div>
-                        <div className="flex justify-between text-xs mt-2 text-white/80">
+                        <div className="flex justify-between text-white text-sm">
                           <span>Receivables</span>
                           <span>Payables</span>
                         </div>
                       </div>
-
-                      {/* Key Features Showcase */}
+                      
+                      {/* Key Features */}
                       <div className="mb-6">
-                        <h3 className="text-sm font-bold text-gray-900 mb-3 flex items-center gap-2">
-                          <span className="text-[#20B2AA]">✨</span>
-                          Key Features
-                        </h3>
-                        <div className="space-y-2">
-                          <div className="flex items-center gap-2 p-2 bg-white rounded-lg shadow-sm border border-gray-100">
-                            <span className="text-lg">💰</span>
-                            <span className="text-xs font-medium text-gray-700 flex-1">Track Income & Expenses</span>
-                            <span className="text-green-500 text-xs">✓</span>
+                        <div className="flex items-center gap-2 mb-4">
+                          <span className="text-xl">⭐</span>
+                          <h3 className="text-lg font-bold text-gray-900">Key Features</h3>
+                        </div>
+                        <div className="space-y-3">
+                          <div className="flex items-center justify-between py-2 border-b border-gray-100">
+                            <div className="flex items-center gap-3">
+                              <span className="text-xl">💰</span>
+                              <span className="text-gray-700 text-sm">Track Income & Expenses</span>
+                            </div>
+                            <span className="text-[#20B2AA] text-lg">✓</span>
                           </div>
-                          <div className="flex items-center gap-2 p-2 bg-white rounded-lg shadow-sm border border-gray-100">
-                            <span className="text-lg">👥</span>
-                            <span className="text-xs font-medium text-gray-700 flex-1">Split Bills with Friends</span>
-                            <span className="text-green-500 text-xs">✓</span>
+                          <div className="flex items-center justify-between py-2 border-b border-gray-100">
+                            <div className="flex items-center gap-3">
+                              <span className="text-xl">👥</span>
+                              <span className="text-gray-700 text-sm">Split Bills with Friends</span>
+                            </div>
+                            <span className="text-[#20B2AA] text-lg">✓</span>
                           </div>
-                          <div className="flex items-center gap-2 p-2 bg-white rounded-lg shadow-sm border border-gray-100">
-                            <span className="text-lg">🍽️</span>
-                            <span className="text-xs font-medium text-gray-700 flex-1">Mess Attendance Tracking</span>
-                            <span className="text-green-500 text-xs">✓</span>
+                          <div className="flex items-center justify-between py-2 border-b border-gray-100">
+                            <div className="flex items-center gap-3">
+                              <span className="text-xl">🚪</span>
+                              <span className="text-gray-700 text-sm">Mess Attendance Tracking</span>
+                            </div>
+                            <span className="text-[#20B2AA] text-lg">✓</span>
                           </div>
-                          <div className="flex items-center gap-2 p-2 bg-white rounded-lg shadow-sm border border-gray-100">
-                            <span className="text-lg">📊</span>
-                            <span className="text-xs font-medium text-gray-700 flex-1">Detailed Analytics</span>
-                            <span className="text-green-500 text-xs">✓</span>
+                          <div className="flex items-center justify-between py-2">
+                            <div className="flex items-center gap-3">
+                              <span className="text-xl">📊</span>
+                              <span className="text-gray-700 text-sm">Detailed Analytics</span>
+                            </div>
+                            <span className="text-[#20B2AA] text-lg">✓</span>
                           </div>
                         </div>
                       </div>
-
-                      {/* App Benefits */}
-                      <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100">
-                        <h3 className="text-sm font-bold text-gray-900 mb-3 flex items-center gap-2">
-                          <span className="text-[#20B2AA]">🎯</span>
-                          Why Choose Us?
-                        </h3>
+                      
+                      {/* Why Choose Us */}
+                      <div>
+                        <div className="flex items-center gap-2 mb-4">
+                          <div className="w-5 h-5 bg-red-500 rounded-full flex items-center justify-center">
+                            <span className="text-white text-xs font-bold">?</span>
+                          </div>
+                          <h3 className="text-lg font-bold text-gray-900">Why Choose Us?</h3>
+                        </div>
                         <div className="space-y-2">
-                          <div className="flex items-start gap-2">
-                            <span className="text-[#20B2AA] text-xs mt-0.5">•</span>
-                            <span className="text-xs text-gray-600 flex-1">100% Free - No Hidden Charges</span>
+                          <div className="flex items-center gap-2">
+                            <div className="w-2 h-2 bg-[#20B2AA] rounded-full"></div>
+                            <span className="text-gray-600 text-sm">100% Free - No Hidden Charges</span>
                           </div>
-                          <div className="flex items-start gap-2">
-                            <span className="text-[#20B2AA] text-xs mt-0.5">•</span>
-                            <span className="text-xs text-gray-600 flex-1">Secure & Encrypted Data</span>
+                          <div className="flex items-center gap-2">
+                            <div className="w-2 h-2 bg-[#20B2AA] rounded-full"></div>
+                            <span className="text-gray-600 text-sm">Secure & Encrypted Data</span>
                           </div>
-                          <div className="flex items-start gap-2">
-                            <span className="text-[#20B2AA] text-xs mt-0.5">•</span>
-                            <span className="text-xs text-gray-600 flex-1">No Ads - Clean Experience</span>
+                          <div className="flex items-center gap-2">
+                            <div className="w-2 h-2 bg-[#20B2AA] rounded-full"></div>
+                            <span className="text-gray-600 text-sm">No Ads - Clean Experience</span>
                           </div>
-                          <div className="flex items-start gap-2">
-                            <span className="text-[#20B2AA] text-xs mt-0.5">•</span>
-                            <span className="text-xs text-gray-600 flex-1">Offline Support Available</span>
+                          <div className="flex items-center gap-2">
+                            <div className="w-2 h-2 bg-[#20B2AA] rounded-full"></div>
+                            <span className="text-gray-600 text-sm">Offline Support Available</span>
                           </div>
                         </div>
                       </div>
@@ -646,8 +688,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section id="features" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      {/* Features Section with Auto-Sliding Carousel */}
+      <section id="features" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -658,153 +700,104 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Feature 1: Dashboard */}
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
-              <div className="w-14 h-14 bg-[#20B2AA]/10 rounded-lg flex items-center justify-center mb-6">
-                <span className="text-3xl">📊</span>
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Dashboard & Analytics</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Get a comprehensive overview with outstanding summary, monthly transactions, balance buckets, and detailed analytics at your fingertips.
-              </p>
-            </div>
-
-            {/* Feature 2: Personal Khaata */}
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
-              <div className="w-14 h-14 bg-[#16a085]/10 rounded-lg flex items-center justify-center mb-6">
-                <span className="text-3xl">📝</span>
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Personal Khaata</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Track your income and expenses with categories. Filter by month/year, view summaries, and manage your personal finances efficiently.
-              </p>
-            </div>
-
-            {/* Feature 3: Group Khaata */}
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
-              <div className="w-14 h-14 bg-[#9b59b6]/10 rounded-lg flex items-center justify-center mb-6">
-                <span className="text-3xl">👨‍👩‍👧‍👦</span>
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Group Khaata</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Split bills with friends effortlessly. Create group transactions, track who paid what, and settle balances easily.
-              </p>
-            </div>
-
-            {/* Feature 4: Mess Attendance */}
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
-              <div className="w-14 h-14 bg-[#f39c12]/10 rounded-lg flex items-center justify-center mb-6">
-                <span className="text-3xl">🍽️</span>
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Mess Attendance</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Track daily meals (Breakfast, Lunch, Dinner) with pricing and person count. Filter by month/year and manage mess records easily.
-              </p>
-            </div>
-
-            {/* Feature 5: Mess Analytics */}
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
-              <div className="w-14 h-14 bg-[#f39c12]/10 rounded-lg flex items-center justify-center mb-6">
-                <span className="text-3xl">📊</span>
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Mess Analytics</h3>
-              <p className="text-gray-600 leading-relaxed">
-                View detailed analytics and insights for your mess records. Track spending patterns and meal trends over time.
-              </p>
-            </div>
-
-            {/* Feature 6: Contacts */}
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
-              <div className="w-14 h-14 bg-[#3498db]/10 rounded-lg flex items-center justify-center mb-6">
-                <span className="text-3xl">👥</span>
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Contacts Management</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Manage your contacts and track balances with friends. See who owes you and who you owe at a glance.
-              </p>
-            </div>
-
-            {/* Feature 7: Reports */}
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
-              <div className="w-14 h-14 bg-[#e74c3c]/10 rounded-lg flex items-center justify-center mb-6">
-                <span className="text-3xl">📊</span>
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Reports & Export</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Export your transactions and reports in various formats. Keep detailed records for your financial planning.
-              </p>
-            </div>
-
-            {/* Feature 8: Notifications */}
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
-              <div className="w-14 h-14 bg-[#20B2AA]/10 rounded-lg flex items-center justify-center mb-6">
-                <span className="text-3xl">📧</span>
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Notifications</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Get email notifications and alerts for important transactions, balances, and updates. Stay informed always.
-              </p>
-            </div>
-
-            {/* Feature 9: Secure & Private */}
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
-              <div className="w-14 h-14 bg-[#16a085]/10 rounded-lg flex items-center justify-center mb-6">
-                <span className="text-3xl">🔒</span>
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Secure & Private</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Your data is encrypted and secure. Biometric authentication and secure storage ensure your financial information stays private.
-              </p>
-            </div>
-          </div>
+          {/* Auto-Sliding Carousel */}
+          <FeaturesCarousel />
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Why Choose Khaata App?
-          </h2>
-          <p className="text-xl text-gray-600 leading-relaxed mb-12">
-            Khaata App is designed to simplify your financial management. Whether you're tracking personal expenses, splitting bills with friends, or managing mess attendance, we've got you covered. Our intuitive interface and powerful features make it easy to stay on top of your finances.
-          </p>
-          <div className="grid md:grid-cols-3 gap-8 mt-16">
-            <div>
-              <div className="text-4xl mb-4">🎯</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Easy to Use</h3>
-              <p className="text-gray-600">Intuitive interface that anyone can use</p>
+      {/* Why Choose Us Section */}
+      <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Why Choose Khaatawise?
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Everything you need for complete financial management, all in one powerful app
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all border border-gray-100">
+              <div className="w-12 h-12 bg-[#20B2AA]/10 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-2xl">💰</span>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">100% Free</h3>
+              <p className="text-gray-600 text-sm">No hidden charges, no subscriptions, completely free forever</p>
             </div>
-            <div>
-              <div className="text-4xl mb-4">⚡</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Fast & Reliable</h3>
-              <p className="text-gray-600">Lightning-fast performance and reliable sync</p>
+            
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all border border-gray-100">
+              <div className="w-12 h-12 bg-[#16a085]/10 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-2xl">🔒</span>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Secure & Encrypted</h3>
+              <p className="text-gray-600 text-sm">Your financial data is encrypted and stored securely with biometric protection</p>
             </div>
-            <div>
-              <div className="text-4xl mb-4">💎</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Completely Free</h3>
-              <p className="text-gray-600">No hidden charges, no ads, completely free</p>
+            
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all border border-gray-100">
+              <div className="w-12 h-12 bg-[#9b59b6]/10 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-2xl">✨</span>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">No Ads</h3>
+              <p className="text-gray-600 text-sm">Clean, ad-free experience focused on your financial management</p>
+            </div>
+            
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all border border-gray-100">
+              <div className="w-12 h-12 bg-[#f39c12]/10 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-2xl">📱</span>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Offline Support</h3>
+              <p className="text-gray-600 text-sm">Works seamlessly offline, sync when you're back online</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-900 to-gray-800">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Ready to Get Started?
-          </h2>
-          <p className="text-xl text-gray-300 mb-10">
-            Download Khaata App today and take control of your finances
-          </p>
-          <a
-            href="#download"
-            className="inline-block px-10 py-5 bg-[#20B2AA] text-white rounded-lg hover:bg-[#1a9b94] transition-all font-bold text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1"
-          >
-            Download App Now →
-          </a>
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#20B2AA] via-[#1a9b94] to-[#16a085]">
+        <div className="max-w-5xl mx-auto text-center">
+          <div className="mb-8">
+            <div className="w-24 h-24 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-6 backdrop-blur-sm p-3">
+              <Image
+                src="/khaataicon.png"
+                alt="Khaatawise Logo"
+                width={96}
+                height={96}
+                className="w-full h-full rounded-xl"
+              />
+            </div>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6">
+              Ready to Take Control?
+            </h2>
+            <p className="text-xl md:text-2xl text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed">
+              Join thousands of users managing their finances effortlessly with Khaatawise
+            </p>
+          </div>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a
+              href="https://expo.dev/accounts/safersavvy12/projects/khaata-app/builds/065f6591-044f-491a-b812-e8d837024a8f"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto px-8 py-4 bg-white text-[#20B2AA] rounded-xl hover:bg-gray-100 transition-all font-bold text-lg shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 flex items-center justify-center gap-3"
+            >
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+              </svg>
+              Get it on Google Play
+            </a>
+            <a
+              href="https://expo.dev/accounts/safersavvy12/projects/khaata-app/builds/065f6591-044f-491a-b812-e8d837024a8f"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto px-8 py-4 bg-white/10 backdrop-blur-md text-white border-2 border-white/30 rounded-xl hover:bg-white/20 transition-all font-bold text-lg shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 flex items-center justify-center gap-3"
+            >
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.05,20.28C16.29,20.64 15.43,20.64 14.67,20.28L5.57,15.81C4.81,15.45 4.22,14.69 4.22,13.81V10.19C4.22,9.31 4.81,8.55 5.57,8.19L14.67,3.72C15.43,3.36 16.29,3.36 17.05,3.72L23.63,7.06C24.39,7.42 25,8.18 25,9.06V14.94C25,15.82 24.39,16.58 23.63,16.94L17.05,20.28Z"/>
+              </svg>
+              Download on App Store
+            </a>
+          </div>
         </div>
       </section>
 
@@ -814,10 +807,14 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <div className="w-10 h-10 bg-[#20B2AA] rounded-lg flex items-center justify-center">
-                  <span className="text-white text-xl font-bold">K</span>
-                </div>
-                <span className="text-xl font-bold text-white">Khaata App</span>
+                <Image
+                  src="/khaataicon.png"
+                  alt="Khaatawise Logo"
+                  width={40}
+                  height={40}
+                  className="w-10 h-10 rounded-lg"
+                />
+                <span className="text-xl font-bold text-white">Khaatawise</span>
               </div>
               <p className="text-gray-400">
                 Your complete financial management solution.
@@ -850,7 +847,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-            <p>&copy; {new Date().getFullYear()} Khaata App. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Khaatawise. All rights reserved.</p>
           </div>
         </div>
       </footer>

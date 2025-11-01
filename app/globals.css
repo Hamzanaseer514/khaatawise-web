@@ -80,3 +80,22 @@ html {
 .delay-150 {
   animation-delay: 0.5s;
 }
+
+/* Auto-scrolling carousel animation */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% / 3)); /* Move one set of features (since we have 3 copies) */
+  }
+}
+
+.animate-scroll {
+  animation: scroll 25s linear infinite;
+}
+
+/* Pause on hover */
+.animate-scroll:hover {
+  animation-play-state: paused;
+}

@@ -13,23 +13,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Khaata App - Track Your Expenses, Split Bills & Manage Finances | Personal & Group Ledger",
-  description: "Khaata App - Your complete financial management solution. Track personal expenses, split bills with friends, manage group transactions, track mess attendance, and get detailed analytics. Download now for Android & iOS.",
-  keywords: "khaata app, expense tracker, bill splitter, group expenses, personal finance, mess management, ledger app, finance app, money management, split bills",
-  authors: [{ name: "Khaata App" }],
-  creator: "Khaata App",
-  publisher: "Khaata App",
+  title: "Khaatawise - Track Your Expenses, Split Bills & Manage Finances | Personal & Group Ledger",
+  description: "Khaatawise - Your complete financial management solution. Track personal expenses, split bills with friends, manage group transactions, track mess attendance, and get detailed analytics. Download now for Android & iOS.",
+  keywords: "khaatawise, expense tracker, bill splitter, group expenses, personal finance, mess management, ledger app, finance app, money management, split bills",
+  authors: [{ name: "Khaatawise" }],
+  creator: "Khaatawise",
+  publisher: "Khaatawise",
   openGraph: {
-    title: "Khaata App - Track Your Expenses & Split Bills",
-    description: "Manage your personal finances, split bills with friends, track mess attendance, and get detailed analytics. Download Khaata App now!",
-    url: "https://khaataapp.com",
-    siteName: "Khaata App",
+    title: "Khaatawise - Track Your Expenses & Split Bills",
+    description: "Manage your personal finances, split bills with friends, track mess attendance, and get detailed analytics. Download Khaatawise now!",
+    url: "https://khaatawise.com",
+    siteName: "Khaatawise",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Khaata App - Financial Management",
+        alt: "Khaatawise - Financial Management",
       },
     ],
     locale: "en_US",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Khaata App - Track Your Expenses & Split Bills",
+    title: "Khaatawise - Track Your Expenses & Split Bills",
     description: "Manage your personal finances, split bills with friends, track mess attendance, and get detailed analytics.",
     images: ["/og-image.png"],
   },
