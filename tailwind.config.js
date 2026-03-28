@@ -5,18 +5,32 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#20B2AA',
-          dark: '#1a9b94',
-          light: '#4dccc4',
+          DEFAULT: '#0ea5e9',
+          dark: '#0284c7',
+          light: '#38bdf8',
         },
-        secondary: '#9b59b6',
-        accent: '#f39c12',
-        success: '#16a085',
-        info: '#3498db',
+        accent: {
+          DEFAULT: '#25d1f4',
+          violet: '#8b5cf6',
+        },
+        surface: {
+          light: '#ffffff',
+          dark: '#16161a',
+        },
+        background: {
+          light: '#f8f9fa',
+          dark: '#0a0a0c',
+        },
+        secondary: '#8b5cf6',
+        success: '#10b981',
+        danger: '#ef4444',
+        warning: '#f59e0b',
+        info: '#3b82f6',
       },
       fontFamily: {
         sans: ['var(--font-geist-sans)', 'system-ui', 'sans-serif'],
@@ -26,4 +40,3 @@ module.exports = {
   },
   plugins: [],
 }
-
