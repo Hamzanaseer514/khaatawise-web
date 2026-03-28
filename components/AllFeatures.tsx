@@ -175,7 +175,7 @@ export default function AllFeatures() {
               <h3 className="text-lg sm:text-xl font-bold text-[#0f172a] dark:text-white mb-1">Ready to manage your finances?</h3>
               <p className="text-xs sm:text-sm text-[#64748b] dark:text-[#7a8ba3]">Download Khaatawise across Android &amp; iOS — completely free.</p>
             </div>
-            <a href="#download" className="px-6 py-3 bg-[#0ea5e9] dark:bg-[#25d1f4] text-white rounded-xl font-bold text-sm hover:opacity-90 transition-all shadow-lg shadow-[#0ea5e9]/20 dark:shadow-[#25d1f4]/20 hover:-translate-y-0.5 flex-shrink-0 whitespace-nowrap">
+            <a href="https://expo.dev/accounts/safersavvy12/projects/khaata-app/builds/f9ed5cc9-9854-4a4e-9cad-fa0fc41b8a52" target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-[#0ea5e9] dark:bg-[#25d1f4] text-white rounded-xl font-bold text-sm hover:opacity-90 transition-all shadow-lg shadow-[#0ea5e9]/20 dark:shadow-[#25d1f4]/20 hover:-translate-y-0.5 flex-shrink-0 whitespace-nowrap">
               Download App
             </a>
           </div>

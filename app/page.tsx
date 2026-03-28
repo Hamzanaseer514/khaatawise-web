@@ -54,7 +54,7 @@ export default function Home() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8">
-                <a href="#download" className="px-8 py-4 bg-[#0ea5e9] dark:bg-[#25d1f4] text-white rounded-2xl hover:opacity-90 transition-all font-bold text-lg shadow-lg shadow-[#0ea5e9]/25 dark:shadow-[#25d1f4]/25 hover:-translate-y-0.5 transform text-center">
+                <a href="https://expo.dev/accounts/safersavvy12/projects/khaata-app/builds/f9ed5cc9-9854-4a4e-9cad-fa0fc41b8a52" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-[#0ea5e9] dark:bg-[#25d1f4] text-white rounded-2xl hover:opacity-90 transition-all font-bold text-lg shadow-lg shadow-[#0ea5e9]/25 dark:shadow-[#25d1f4]/25 hover:-translate-y-0.5 transform text-center">
                   Download Now
                 </a>
                 <a href="#features" className="px-8 py-4 bg-white dark:bg-white/5 text-[#0ea5e9] dark:text-[#25d1f4] rounded-2xl border-2 border-[#0ea5e9]/25 dark:border-[#25d1f4]/25 hover:bg-[#0ea5e9]/5 dark:hover:bg-[#25d1f4]/10 transition-all font-bold text-lg text-center">
@@ -393,16 +393,16 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-5">Ready to Take Control?</h2>
             <p className="text-lg md:text-xl text-white/85 mb-10 max-w-xl mx-auto">Join thousands of users managing their finances effortlessly with 12+ powerful features</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
-              <a href="https://expo.dev/accounts/safersavvy12/projects/khaata-app/builds/5d70b7f4-212d-4f7a-98f4-0eb91a29f201" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-white text-[#0ea5e9] dark:text-[#7c3aed] rounded-xl font-bold text-lg shadow-xl hover:shadow-2xl hover:-translate-y-1 transform transition-all flex items-center justify-center gap-2">
+              <a href="https://expo.dev/accounts/safersavvy12/projects/khaata-app/builds/f9ed5cc9-9854-4a4e-9cad-fa0fc41b8a52" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-white text-[#0ea5e9] dark:text-[#7c3aed] rounded-xl font-bold text-lg shadow-xl hover:shadow-2xl hover:-translate-y-1 transform transition-all flex items-center justify-center gap-2">
                 ▶️ Google Play
               </a>
-              <a href="https://expo.dev/accounts/safersavvy12/projects/khaata-app/builds/5d70b7f4-212d-4f7a-98f4-0eb91a29f201" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-white/10 backdrop-blur text-white border-2 border-white/25 rounded-xl font-bold text-lg hover:bg-white/20 transition-all flex items-center justify-center gap-2">
+              <a href="https://expo.dev/accounts/safersavvy12/projects/khaata-app/builds/f9ed5cc9-9854-4a4e-9cad-fa0fc41b8a52" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-white/10 backdrop-blur text-white border-2 border-white/25 rounded-xl font-bold text-lg hover:bg-white/20 transition-all flex items-center justify-center gap-2">
                 🍎 App Store
               </a>
             </div>
             <div className="inline-flex flex-col items-center bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
               <p className="text-sm font-semibold text-white mb-3">Scan to download</p>
-              <Image src="/qr.png" alt="QR Code" width={140} height={140} className="w-36 h-36 rounded-lg" priority />
+              <Image src="/qr1.png" alt="QR Code" width={140} height={140} className="w-36 h-36 rounded-lg" priority />
               <p className="text-[10px] text-white/60 mt-2">Use your phone camera</p>
             </div>
           </div>

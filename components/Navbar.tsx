@@ -66,7 +66,9 @@ export default function Navbar() {
               )}
             </button>
             <a
-              href="#download"
+              href="https://expo.dev/accounts/safersavvy12/projects/khaata-app/builds/f9ed5cc9-9854-4a4e-9cad-fa0fc41b8a52"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-4 sm:px-6 py-2 bg-primary dark:bg-accent text-white rounded-lg hover:bg-primary-dark dark:hover:bg-primary transition-colors font-semibold text-sm shadow-md"
             >
               Download App
@@ -99,7 +101,9 @@ export default function Navbar() {
               )}
             </button>
             <a
-              href="#download"
+              href="https://expo.dev/accounts/safersavvy12/projects/khaata-app/builds/f9ed5cc9-9854-4a4e-9cad-fa0fc41b8a52"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-3 py-1.5 bg-primary dark:bg-accent text-white rounded-lg hover:bg-primary-dark dark:hover:bg-primary transition-colors font-semibold text-xs shadow-md"
             >
               Download
