@@ -54,7 +54,7 @@ export default function Home() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8">
-                <a href="https://expo.dev/accounts/safersavvy12/projects/khaata-app/builds/cd4add38-8b3e-4101-9c1a-fef918f46fb7" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-[#0ea5e9] dark:bg-[#25d1f4] text-white rounded-2xl hover:opacity-90 transition-all font-bold text-lg shadow-lg shadow-[#0ea5e9]/25 dark:shadow-[#25d1f4]/25 hover:-translate-y-0.5 transform text-center">
+                <a href="https://expo.dev/accounts/safersavvy12/projects/khaata-app/builds/2c8bd8ce-c5bf-4855-9447-7f0c412e3d06" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-[#0ea5e9] dark:bg-[#25d1f4] text-white rounded-2xl hover:opacity-90 transition-all font-bold text-lg shadow-lg shadow-[#0ea5e9]/25 dark:shadow-[#25d1f4]/25 hover:-translate-y-0.5 transform text-center">
                   Download Now
                 </a>
                 <a href="#features" className="px-8 py-4 bg-white dark:bg-white/5 text-[#0ea5e9] dark:text-[#25d1f4] rounded-2xl border-2 border-[#0ea5e9]/25 dark:border-[#25d1f4]/25 hover:bg-[#0ea5e9]/5 dark:hover:bg-[#25d1f4]/10 transition-all font-bold text-lg text-center">
@@ -393,10 +393,10 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-5">Ready to Take Control?</h2>
             <p className="text-lg md:text-xl text-white/85 mb-10 max-w-xl mx-auto">Join thousands of users managing their finances effortlessly with 12+ powerful features</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
-              <a href="https://expo.dev/accounts/safersavvy12/projects/khaata-app/builds/cd4add38-8b3e-4101-9c1a-fef918f46fb7" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-white text-[#0ea5e9] dark:text-[#7c3aed] rounded-xl font-bold text-lg shadow-xl hover:shadow-2xl hover:-translate-y-1 transform transition-all flex items-center justify-center gap-2">
+              <a href="https://expo.dev/accounts/safersavvy12/projects/khaata-app/builds/2c8bd8ce-c5bf-4855-9447-7f0c412e3d06" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-white text-[#0ea5e9] dark:text-[#7c3aed] rounded-xl font-bold text-lg shadow-xl hover:shadow-2xl hover:-translate-y-1 transform transition-all flex items-center justify-center gap-2">
                 ▶️ Google Play
               </a>
-              <a href="https://expo.dev/accounts/safersavvy12/projects/khaata-app/builds/cd4add38-8b3e-4101-9c1a-fef918f46fb7" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-white/10 backdrop-blur text-white border-2 border-white/25 rounded-xl font-bold text-lg hover:bg-white/20 transition-all flex items-center justify-center gap-2">
+              <a href="https://expo.dev/accounts/safersavvy12/projects/khaata-app/builds/2c8bd8ce-c5bf-4855-9447-7f0c412e3d06" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-white/10 backdrop-blur text-white border-2 border-white/25 rounded-xl font-bold text-lg hover:bg-white/20 transition-all flex items-center justify-center gap-2">
                 🍎 App Store
               </a>
             </div>

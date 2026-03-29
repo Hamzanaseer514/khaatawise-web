@@ -66,7 +66,7 @@ export default function Navbar() {
               )}
             </button>
             <a
-              href="https://expo.dev/accounts/safersavvy12/projects/khaata-app/builds/cd4add38-8b3e-4101-9c1a-fef918f46fb7"
+              href="https://expo.dev/accounts/safersavvy12/projects/khaata-app/builds/2c8bd8ce-c5bf-4855-9447-7f0c412e3d06"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 sm:px-6 py-2 bg-primary dark:bg-accent text-white rounded-lg hover:bg-primary-dark dark:hover:bg-primary transition-colors font-semibold text-sm shadow-md"
@@ -101,7 +101,7 @@ export default function Navbar() {
               )}
             </button>
             <a
-              href="https://expo.dev/accounts/safersavvy12/projects/khaata-app/builds/cd4add38-8b3e-4101-9c1a-fef918f46fb7"
+              href="https://expo.dev/accounts/safersavvy12/projects/khaata-app/builds/2c8bd8ce-c5bf-4855-9447-7f0c412e3d06"
               target="_blank"
               rel="noopener noreferrer"
               className="px-3 py-1.5 bg-primary dark:bg-accent text-white rounded-lg hover:bg-primary-dark dark:hover:bg-primary transition-colors font-semibold text-xs shadow-md"
